@@ -1,0 +1,14 @@
+﻿using System;
+
+namespace Time_and_Sound_MonoGame
+{
+    public static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            using (var game = new Game1())
+                game.Run();
+        }
+    }
+}
