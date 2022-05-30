@@ -75,7 +75,7 @@ namespace Time_and_Sound_MonoGame
                 bang = false;
             if (seconds >= 15)
                 bang = true;
-            else if (bang == true && seconds>=8)
+            else if (bang == true && seconds >= explode.Duration.TotalSeconds)
                 Exit();
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
